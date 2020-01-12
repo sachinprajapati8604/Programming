@@ -1,0 +1,270 @@
+Class:-- The class is a collection of method ,variable And constructors.
+50 keyword in java
+4 variable in java..(Instances,class,parameters)
+Google class room code
+38bymr5
+
+>>>>>how to take input in java using object of  scanner class
+
+The package is container of classes,interfaces,sub-package
+
+Scanner :-the scanner classs is presented in java.util package...
+to create objet of class :- 
+Classname variablename=new Classname();
+new is keyword to create a object
+
+int a;
+a=sc.nextInt();
+float b;
+b=sc.nextFloat();
+double c;
+c=sc.nextDouble();
+string str;
+str=sc.nextLine();
+
+>>>>>Disicion control in java:----Used for decision making
+if:- if is akeyword which work as a dicision control.We atttach a condition  with if statement.If given condition i strue then code will executed and if the given condition is false then code will not executed...
+Syntax
+if(condtion)
+{
+//code
+}
+
+
+if-else:-- if else is variation of if statement..we attach condition with if statement .if given condtion is true then if block code will executed and if given condition is false then else block code will executed...
+SYntax
+
+if(condition)
+{
+//code1
+}
+else
+{
+//code2
+}
+
+>>>>>>>Ladder if-else:--
+if(condtion1)
+{
+//code1
+}
+else if(conition2)
+{
+//code2
+}
+else
+{
+//code
+}
+
+
+>>>>>>>Switch Case:--Switch is a keyword whic works as case control,it is used to make menubased programs. 
+Syntax:--
+switch(expression)  //char or int or String
+{
+case 1:
+//code 1:
+break;
+case 2:
+//code2
+break;
+.
+.
+.
+default:     //optional
+//code
+//brake;
+}
+
+>>>>>>>>>>>>>>>>>LOOP CONTROL:------If you have block of code whic you want to execute repeatedly up to given condition is true..then u can use a loop control
+
+       In java Programming language there are 4 types of LOOP controls.
+1.While
+2.for
+3.do-while	   
+4.for each
+
+
+While>>>>> while is a keyword which work as loop control.it is called entry control...
+Syntax:-
+Intialization of loop counter;
+while(condition)
+{
+//code
+Updation of loop counter;
+} 	   
+
+For Loop  :___this is calles exit control
+for(intialization;condtion;updation)
+{
+//code
+}
+
+Do-while loop:-----
+
+syntax:--
+Intialization;
+do
+{
+//code
+update;
+}
+while(condition);
+
+>>>>>>>>>>>>>>>>>>>ARRAy:---- Array is collection of similiar data type,that means an array can store multiple value of similer data types..
+Declaration of array:---
+
+data type [] arrayname =new datatype[size]; //this is the declaration and instaciation
+
+it can be written as :
+
+data type []arrayname;   //declartion
+arrayname=new datatype[size]; //instaciation
+
+int []list =new int[10];
+_____
+int [] list;
+list=new int[10];
+
+Note:---The indexing in array is starting from 0
+___________
+Intialization of array:-
+int [] list={10,20,30,40,50,};
+
+______________________________________________________________________________________________________________________________
+Code segment of take input from user for an array
+
+int [] x=new int[5];
+int i;
+Scanner sc=new Scanner(System.in);
+for(i=0;i<5;i++)
+{
+x[i]=sc.nextInt();
+}
+
+
+>>>>>>>>>>>>>>>>>>>Function:--Function is anmed block of code which perform specific task
+
+Advantage of Function :--BY using function you can avoid to write same code over and over   
+
+How to give defination of function in java 
+--->Inside class and outside of main 
+
+Access Modifier in Java  (11 present)
+1.private
+2.public
+3.protected
+4.finall
+5.static
+6.abstarct
+7.volatile
+8.native
+9.synchronized
+10.strict
+11.transient
+
+modifier returntype functionname(parameters)
+{
+//code
+}
+
+
+E.G.
+int add(int x,int y)
+{
+return(x+y);
+}
+________________________________________________________________________________________________________________________________________________
+
+In java there are two types of function :-
+ 1. static function :- in there no need of object to call the function...
+ 2.non-static function:- in there need of object  is  required to call the function..
+note: But we can call both function by the object....
+
+
+
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+OOPS:- The object oriented programming  system is a mechanism of software development.The OOps has 4 pilers.
+1.Abstarction
+2.Encapsulation
+3.Inheritence
+4.Polymorphism
+
+If any programming language follows these rule known as object oriented programming language..
+
+Object:-object is real world entity which have its state and behaviour .
+Class:-calss is collection of variable ,methods and constructors.
+
+in java the class is declared by using class keyword followed by class name .the body of class enclosed within braces and terminated by semicoloumn(OPTIONAL)
+within body of class we can use variable and methods
+
+Syntax:-
+
+class classname
+{
+//body of class
+}
+
+Constructor :--The constructor has  SPEcial method which is used to intialize the data member.the constructor have following properties
+
+1.The constructor name is same as class name
+2.The constructor have no return type.
+3.the constructor call automatically as soon AS OBJECT IS CREATED. 
+
+
+
+
+Inheritence>>>>inheritence is features of object oriented programming .in inheritence you can create a new class by using existing class .
+The existing class is called base/super/parent and new created class is called derived/sub/child class.
+
+
+
+e.g
+class A
+{
+
+}
+class B extends A
+{
+
+}
+
+Types of Inheritence in java>>>
+1.Single Inheritence
+2.Heirachical Inheritence
+3.Multilevel Inheritence 
+
+Single Inheritence>>.In single inheritence there is a single base class and single derived class..
+
+Hierachical Inheritence--->In hierachical inheritence there is a single base class and Multiple derived class.
+___________________
+POLYMORPHISM_----->>>>>>The term Polymorphism means one thing many forms.In java there are two type of polymorphism:-
+1.Method Overloading  (compile time) :-method name same but parameters should be different...
+2.Method Overriding    (run time )
+
+Method Overloading :---in java you can give same name to multiple method but their parameters should be different.Based on method parameters it
+ is decided at compilation time that which method call from where.This concept is called method overloading.
+
+
+Method Overriding:>>The re-writing  of base class method to derived class is called method overriding.
+
+Rules for method overriding :-
+1.The class must be inherited.
+2.The method name must be same .
+3.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
