@@ -4,6 +4,7 @@
 #include<math.h>
 main()
 {
+	/*main function start*/
 	float x,y,x1,x2,y1,y2,dx,dy,e;
 	int i,gd,gm;
 	clrscr();
